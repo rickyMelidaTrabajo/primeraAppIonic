@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>paisajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let paisaje of paisajes" [routerLink]="">
+      <ion-avatar slot="start">
+        <ion-img><ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{paisaje.titulo}}
+      </ion-label>
+
+    </ion-item>
+  </ion-list>
+</ion-content>

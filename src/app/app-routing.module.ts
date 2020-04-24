@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'paisajes',
     pathMatch: 'full'
+  },
+  {
+    path: 'paisajes',
+    loadChildren: () => import('./paisajes/paisajes.module').then( m => m.PaisajesPageModule)
   },
 ];
 
